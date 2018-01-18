@@ -1,0 +1,124 @@
+package com.lynda.sys.organization.service.impl;
+
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
+
+import org.apache.commons.lang.StringUtils;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.lynda.common.dao.organization.URoleMapper;
+import com.lynda.common.dao.organization.URolePermissionMapper;
+import com.lynda.common.dao.organization.UUserMapper;
+import com.lynda.common.model.organization.URole;
+import com.lynda.common.plugin.Page;
+import com.lynda.core.shiro.token.manager.TokenManager;
+import com.lynda.sys.organization.bo.RolePermissionAllocationBo;
+import com.lynda.sys.organization.service.RoleService;
+import com.lynda.util.LoggerUtils;
+
+@Service
+@SuppressWarnings("unchecked")
+public class RoleServiceImpl implements RoleService {
+
+	@Autowired
+	URoleMapper roleMapper;
+	@Autowired
+	UUserMapper userMapper;
+	@Autowired
+	URolePermissionMapper rolePermissionMapper;
+
+	@Override
+	public int deleteByPrimaryKey(Long id) {
+		return roleMapper.deleteByPrimaryKey(id);
+	}
+
+	@Override
+	public int insert(URole record) {
+		return roleMapper.insert(record);
+	}
+
+	@Override
+	public int insertSelective(URole record) {
+		return roleMapper.insertSelective(record);
+	}
+
+	@Override
+	public URole selectByPrimaryKey(Long id) {
+		return roleMapper.selectByPrimaryKey(id);
+	}
+
+	@Override
+	public int updateByPrimaryKey(URole record) {
+		return roleMapper.updateByPrimaryKey(record);
+	}
+
+	@Override
+	public int updateByPrimaryKeySelective(URole record) {
+		return roleMapper.updateByPrimaryKeySelective(record);
+	}
+
+	
+	@Override
+	public List<URole> findPage(Page page) {
+		return roleMapper.findAll(page);
+	}
+	@Override
+	public List<RolePermissionAllocationBo> findAllRoleAndPermission(Page page) {
+		return roleMapper.findAllRoleAndPermission(page);
+	}
+	@Override
+	public Map<String, Object> deleteRoleById(String ids) {
+		Map<String,Object> resultMap = new HashMap<String,Object>();
+		try {
+			int count=0;
+			String resultMsg = "删除成功。";
+			String[] idArray = new String[]{};
+			if(StringUtils.contains(ids, ",")){
+				idArray = ids.split(",");
+			}else{
+				idArray = new String[]{ids};
+			}
+			
+			c:for (String idx : idArray) {
+				Long id = new Long(idx);
+				if(new Long(1).equals(id)){
+					resultMsg = "操作成功，But'系统管理员不能删除。";
+					continue c;
+				}else{
+					count+=this.deleteByPrimaryKey(id);
+				}
+			}
+			resultMap.put("status", 200);
+			resultMap.put("count", count);
+			resultMap.put("resultMsg", resultMsg);
+		} catch (Exception e) {
+			LoggerUtils.fmtError(getClass(), e, "根据IDS删除用户出现错误，ids[%s]", ids);
+			resultMap.put("status", 500);
+			resultMap.put("message", "删除出现错误，请刷新后再试！");
+		}
+		return resultMap;
+	}
+
+	@Override
+	public Set<String> findRoleByUserId(Long userId) {
+		return roleMapper.findRoleByUserId(userId);
+	}
+
+	@Override
+	public List<URole> findNowAllPermission() {
+		Map<String,Object> map = new HashMap<String,Object>();
+		map.put("userId", TokenManager.getUserId());
+		return roleMapper.findNowAllPermission(map);
+	}
+	/**
+	 * 每20分钟执行一次
+	 */
+	@Override
+	public void initData() {
+		roleMapper.initData();
+	}
+	
+}
