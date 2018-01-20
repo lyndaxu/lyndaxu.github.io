@@ -55,9 +55,10 @@ public class MemberController extends BaseController {
 	/**
 	 * 用户列表管理
 	 * @return
+	 * @throws Exception 
 	 */
 	@RequestMapping(value="list")
-	public ModelAndView list(Page page){
+	public ModelAndView list(Page page) throws Exception{
 		PageData pd = getPageData();
 		page.setPd(pd);
 		List<UUser> users = userService.findByPage(page);
