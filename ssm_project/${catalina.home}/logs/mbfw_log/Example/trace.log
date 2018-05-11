@@ -1,0 +1,270 @@
+[main][2017-12-24 21:31:14.605][localhost-startStop-1][TRACE][org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider][275]:Scanning file [E:\newze\workspace\ssm_project\target\classes\com\liu\sysUser\dao\UserMapper.class]
+[main][2017-12-24 21:31:14.620][localhost-startStop-1][TRACE][org.springframework.util.PropertyPlaceholderHelper][165]:Resolved placeholder 'jdbc.driver'
+[main][2017-12-24 21:31:14.620][localhost-startStop-1][TRACE][org.springframework.util.PropertyPlaceholderHelper][165]:Resolved placeholder 'jdbc.url'
+[main][2017-12-24 21:31:14.620][localhost-startStop-1][TRACE][org.springframework.util.PropertyPlaceholderHelper][165]:Resolved placeholder 'jdbc.username'
+[main][2017-12-24 21:31:14.621][localhost-startStop-1][TRACE][org.springframework.util.PropertyPlaceholderHelper][165]:Resolved placeholder 'jdbc.password'
+[main][2017-12-24 21:31:14.622][localhost-startStop-1][TRACE][org.springframework.util.PropertyPlaceholderHelper][165]:Resolved placeholder 'validationQuery'
+[main][2017-12-24 21:31:14.667][localhost-startStop-1][TRACE][org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator][359]:Did not attempt to auto-proxy infrastructure class [org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor]
+[main][2017-12-24 21:31:15.769][localhost-startStop-1][TRACE][org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator][359]:Did not attempt to auto-proxy infrastructure class [org.springframework.transaction.interceptor.TransactionInterceptor]
+[main][2017-12-24 21:32:13.274][http-bio-8080-exec-10][TRACE][org.springframework.transaction.support.TransactionSynchronizationManager][272]:Initializing transaction synchronization
+[main][2017-12-24 21:32:13.277][http-bio-8080-exec-10][TRACE][org.springframework.transaction.interceptor.TransactionAspectSupport][484]:Getting transaction for [com.liu.sysUser.service.Impl.UserServiceImpl.selectUser]
+[main][2017-12-24 21:32:13.299][http-bio-8080-exec-10][TRACE][org.springframework.transaction.support.TransactionSynchronizationManager][193]:Bound value [org.mybatis.spring.SqlSessionHolder@390ff5a7] for key [org.apache.ibatis.session.defaults.DefaultSqlSessionFactory@7b154c0e] to thread [http-bio-8080-exec-10]
+[main][2017-12-24 21:32:13.330][http-bio-8080-exec-10][TRACE][org.springframework.transaction.support.TransactionSynchronizationManager][193]:Bound value [org.springframework.jdbc.datasource.ConnectionHolder@69e0ff01] for key [{
+	CreateTime:"2017-12-24 21:31:14",
+	ActiveCount:1,
+	PoolingCount:0,
+	CreateCount:1,
+	DestroyCount:0,
+	CloseCount:0,
+	ConnectCount:1,
+	Connections:[
+	]
+}
+
+[
+]] to thread [http-bio-8080-exec-10]
+[main][2017-12-24 21:32:13.331][http-bio-8080-exec-10][TRACE][org.springframework.transaction.support.TransactionSynchronizationManager][140]:Retrieved value [org.springframework.jdbc.datasource.ConnectionHolder@69e0ff01] for key [{
+	CreateTime:"2017-12-24 21:31:14",
+	ActiveCount:1,
+	PoolingCount:0,
+	CreateCount:1,
+	DestroyCount:0,
+	CloseCount:0,
+	ConnectCount:1,
+	Connections:[
+	]
+}
+
+[
+]] bound to thread [http-bio-8080-exec-10]
+[main][2017-12-24 21:32:13.629][http-bio-8080-exec-10][TRACE][org.springframework.transaction.support.TransactionSynchronizationManager][140]:Retrieved value [org.mybatis.spring.SqlSessionHolder@390ff5a7] for key [org.apache.ibatis.session.defaults.DefaultSqlSessionFactory@7b154c0e] bound to thread [http-bio-8080-exec-10]
+[main][2017-12-24 21:32:13.629][http-bio-8080-exec-10][TRACE][org.springframework.transaction.support.TransactionSynchronizationManager][140]:Retrieved value [org.mybatis.spring.SqlSessionHolder@390ff5a7] for key [org.apache.ibatis.session.defaults.DefaultSqlSessionFactory@7b154c0e] bound to thread [http-bio-8080-exec-10]
+[main][2017-12-24 21:32:13.629][http-bio-8080-exec-10][TRACE][org.springframework.transaction.interceptor.TransactionAspectSupport][513]:Completing transaction for [com.liu.sysUser.service.Impl.UserServiceImpl.selectUser]
+[main][2017-12-24 21:32:13.630][http-bio-8080-exec-10][TRACE][org.springframework.transaction.support.AbstractPlatformTransactionManager][926]:Triggering beforeCommit synchronization
+[main][2017-12-24 21:32:13.630][http-bio-8080-exec-10][TRACE][org.springframework.transaction.support.AbstractPlatformTransactionManager][939]:Triggering beforeCompletion synchronization
+[main][2017-12-24 21:32:13.631][http-bio-8080-exec-10][TRACE][org.springframework.transaction.support.TransactionSynchronizationManager][243]:Removed value [org.mybatis.spring.SqlSessionHolder@390ff5a7] for key [org.apache.ibatis.session.defaults.DefaultSqlSessionFactory@7b154c0e] from thread [http-bio-8080-exec-10]
+[main][2017-12-24 21:32:13.631][http-bio-8080-exec-10][TRACE][org.springframework.transaction.support.TransactionSynchronizationManager][140]:Retrieved value [org.springframework.jdbc.datasource.ConnectionHolder@69e0ff01] for key [{
+	CreateTime:"2017-12-24 21:31:14",
+	ActiveCount:1,
+	PoolingCount:0,
+	CreateCount:1,
+	DestroyCount:0,
+	CloseCount:0,
+	ConnectCount:1,
+	Connections:[
+	]
+}
+
+[
+]] bound to thread [http-bio-8080-exec-10]
+[main][2017-12-24 21:32:13.632][http-bio-8080-exec-10][TRACE][org.springframework.transaction.support.TransactionSynchronizationManager][243]:Removed value [org.springframework.jdbc.datasource.ConnectionHolder@69e0ff01] for key [{
+	CreateTime:"2017-12-24 21:31:14",
+	ActiveCount:1,
+	PoolingCount:0,
+	CreateCount:1,
+	DestroyCount:0,
+	CloseCount:0,
+	ConnectCount:1,
+	Connections:[
+	]
+}
+
+[
+]] from thread [http-bio-8080-exec-10]
+[main][2017-12-24 21:32:13.634][http-bio-8080-exec-10][TRACE][org.springframework.transaction.support.AbstractPlatformTransactionManager][952]:Triggering afterCommit synchronization
+[main][2017-12-24 21:32:13.635][http-bio-8080-exec-10][TRACE][org.springframework.transaction.support.AbstractPlatformTransactionManager][968]:Triggering afterCompletion synchronization
+[main][2017-12-24 21:32:13.635][http-bio-8080-exec-10][TRACE][org.springframework.transaction.support.TransactionSynchronizationManager][331]:Clearing transaction synchronization
+[main][2017-12-24 22:15:37.222][main][TRACE][org.springframework.test.context.support.ContextLoaderUtils][296]:Retrieved @ContextConfiguration attributes [{name=, value=[], classes=[], loader=interface org.springframework.test.context.ContextLoader, locations=[classpath:applicationContext.xml], initializers=[], inheritLocations=true, inheritInitializers=true}] for declaring class [com.liu.test.TestUserService].
+[main][2017-12-24 22:15:37.226][main][TRACE][org.springframework.test.context.support.ContextLoaderUtils][302]:Resolved context configuration attributes: [ContextConfigurationAttributes@1e67a849 declaringClass = 'com.liu.test.TestUserService', classes = '{}', locations = '{classpath:applicationContext.xml}', inheritLocations = true, initializers = '{}', inheritInitializers = true, name = [null], contextLoaderClass = 'org.springframework.test.context.ContextLoader']
+[main][2017-12-24 22:15:37.227][main][TRACE][org.springframework.test.context.support.AbstractTestContextBootstrapper][437]:Resolving ContextLoader for context configuration attributes [ContextConfigurationAttributes@1e67a849 declaringClass = 'com.liu.test.TestUserService', classes = '{}', locations = '{classpath:applicationContext.xml}', inheritLocations = true, initializers = '{}', inheritInitializers = true, name = [null], contextLoaderClass = 'org.springframework.test.context.ContextLoader']
+[main][2017-12-24 22:15:37.228][main][TRACE][org.springframework.test.context.support.AbstractTestContextBootstrapper][405]:Using ContextLoader class [org.springframework.test.context.support.DelegatingSmartContextLoader] for test class [com.liu.test.TestUserService]
+[main][2017-12-24 22:15:37.235][main][TRACE][org.springframework.test.context.support.AbstractTestContextBootstrapper][343]:Processing locations and classes for context configuration attributes [ContextConfigurationAttributes@1e67a849 declaringClass = 'com.liu.test.TestUserService', classes = '{}', locations = '{classpath:applicationContext.xml}', inheritLocations = true, initializers = '{}', inheritInitializers = true, name = [null], contextLoaderClass = 'org.springframework.test.context.ContextLoader']
+[main][2017-12-24 22:15:37.239][main][TRACE][org.springframework.test.context.support.ApplicationContextInitializerUtils][81]:Processing context initializers for context configuration attributes [ContextConfigurationAttributes@1e67a849 declaringClass = 'com.liu.test.TestUserService', classes = '{}', locations = '{classpath:applicationContext.xml}', inheritLocations = true, initializers = '{}', inheritInitializers = true, name = [null], contextLoaderClass = 'org.springframework.test.context.ContextLoader']
+[main][2017-12-24 22:15:37.262][main][TRACE][org.springframework.test.context.TestContextManager][131]:Registering TestExecutionListener: org.springframework.test.context.web.ServletTestExecutionListener@184cf7cf
+[main][2017-12-24 22:15:37.262][main][TRACE][org.springframework.test.context.TestContextManager][131]:Registering TestExecutionListener: org.springframework.test.context.support.DependencyInjectionTestExecutionListener@2fd6b6c7
+[main][2017-12-24 22:15:37.262][main][TRACE][org.springframework.test.context.TestContextManager][131]:Registering TestExecutionListener: org.springframework.test.context.support.DirtiesContextTestExecutionListener@5bfa9431
+[main][2017-12-24 22:15:37.263][main][TRACE][org.springframework.test.context.TestContextManager][131]:Registering TestExecutionListener: org.springframework.test.context.transaction.TransactionalTestExecutionListener@5db250b4
+[main][2017-12-24 22:15:37.263][main][TRACE][org.springframework.test.context.TestContextManager][131]:Registering TestExecutionListener: org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@223f3642
+[main][2017-12-24 22:15:37.282][main][TRACE][org.springframework.test.context.TestContextManager][173]:beforeTestClass(): class [com.liu.test.TestUserService]
+[main][2017-12-24 22:15:37.285][main][TRACE][org.springframework.test.context.TestContextManager][206]:prepareTestInstance(): instance [com.liu.test.TestUserService@45b9a632]
+[main][2017-12-24 22:15:37.730][main][TRACE][org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider][275]:Scanning file [E:\newze\workspace\ssm_project\target\classes\com\liu\sysUser\dao\UserMapper.class]
+[main][2017-12-24 22:15:37.745][main][TRACE][org.springframework.util.PropertyPlaceholderHelper][165]:Resolved placeholder 'jdbc.driver'
+[main][2017-12-24 22:15:37.745][main][TRACE][org.springframework.util.PropertyPlaceholderHelper][165]:Resolved placeholder 'jdbc.url'
+[main][2017-12-24 22:15:37.746][main][TRACE][org.springframework.util.PropertyPlaceholderHelper][165]:Resolved placeholder 'jdbc.username'
+[main][2017-12-24 22:15:37.746][main][TRACE][org.springframework.util.PropertyPlaceholderHelper][165]:Resolved placeholder 'jdbc.password'
+[main][2017-12-24 22:15:37.746][main][TRACE][org.springframework.util.PropertyPlaceholderHelper][165]:Resolved placeholder 'validationQuery'
+[main][2017-12-24 22:15:37.775][main][TRACE][org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator][359]:Did not attempt to auto-proxy infrastructure class [org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor]
+[main][2017-12-24 22:15:38.702][main][TRACE][org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator][359]:Did not attempt to auto-proxy infrastructure class [org.springframework.transaction.interceptor.TransactionInterceptor]
+[main][2017-12-24 22:15:38.743][main][TRACE][org.springframework.test.context.TestContextManager][243]:beforeTestMethod(): instance [com.liu.test.TestUserService@45b9a632], method [public void com.liu.test.TestUserService.testQueryById1()]
+[main][2017-12-24 22:15:38.754][main][TRACE][org.springframework.transaction.support.TransactionSynchronizationManager][272]:Initializing transaction synchronization
+[main][2017-12-24 22:15:38.755][main][TRACE][org.springframework.transaction.interceptor.TransactionAspectSupport][484]:Getting transaction for [com.liu.sysUser.service.Impl.UserServiceImpl.getUsers]
+[main][2017-12-24 22:15:38.767][main][TRACE][org.springframework.transaction.support.TransactionSynchronizationManager][193]:Bound value [org.mybatis.spring.SqlSessionHolder@1021f6c9] for key [org.apache.ibatis.session.defaults.DefaultSqlSessionFactory@5bc9ba1d] to thread [main]
+[main][2017-12-24 22:15:38.785][main][TRACE][org.springframework.transaction.support.TransactionSynchronizationManager][193]:Bound value [org.springframework.jdbc.datasource.ConnectionHolder@16746061] for key [{
+	CreateTime:"2017-12-24 22:15:37",
+	ActiveCount:1,
+	PoolingCount:0,
+	CreateCount:1,
+	DestroyCount:0,
+	CloseCount:0,
+	ConnectCount:1,
+	Connections:[
+	]
+}
+
+[
+]] to thread [main]
+[main][2017-12-24 22:15:38.786][main][TRACE][org.springframework.transaction.support.TransactionSynchronizationManager][140]:Retrieved value [org.springframework.jdbc.datasource.ConnectionHolder@16746061] for key [{
+	CreateTime:"2017-12-24 22:15:37",
+	ActiveCount:1,
+	PoolingCount:0,
+	CreateCount:1,
+	DestroyCount:0,
+	CloseCount:0,
+	ConnectCount:1,
+	Connections:[
+	]
+}
+
+[
+]] bound to thread [main]
+[main][2017-12-24 22:15:38.977][main][TRACE][org.apache.ibatis.logging.jdbc.BaseJdbcLogger][145]:<==    Columns: USER_ID, USER_NAME, USER_PASSWORD, USER_EMAIL
+[main][2017-12-24 22:15:38.978][main][TRACE][org.apache.ibatis.logging.jdbc.BaseJdbcLogger][145]:<==        Row: 1, 林炳文, 1234567@, ling20081005@126.com
+[main][2017-12-24 22:15:38.985][main][TRACE][org.springframework.transaction.support.TransactionSynchronizationManager][140]:Retrieved value [org.mybatis.spring.SqlSessionHolder@1021f6c9] for key [org.apache.ibatis.session.defaults.DefaultSqlSessionFactory@5bc9ba1d] bound to thread [main]
+[main][2017-12-24 22:15:38.985][main][TRACE][org.springframework.transaction.support.TransactionSynchronizationManager][140]:Retrieved value [org.mybatis.spring.SqlSessionHolder@1021f6c9] for key [org.apache.ibatis.session.defaults.DefaultSqlSessionFactory@5bc9ba1d] bound to thread [main]
+[main][2017-12-24 22:15:38.986][main][TRACE][org.springframework.transaction.interceptor.TransactionAspectSupport][513]:Completing transaction for [com.liu.sysUser.service.Impl.UserServiceImpl.getUsers]
+[main][2017-12-24 22:15:38.986][main][TRACE][org.springframework.transaction.support.AbstractPlatformTransactionManager][926]:Triggering beforeCommit synchronization
+[main][2017-12-24 22:15:38.986][main][TRACE][org.springframework.transaction.support.AbstractPlatformTransactionManager][939]:Triggering beforeCompletion synchronization
+[main][2017-12-24 22:15:38.987][main][TRACE][org.springframework.transaction.support.TransactionSynchronizationManager][243]:Removed value [org.mybatis.spring.SqlSessionHolder@1021f6c9] for key [org.apache.ibatis.session.defaults.DefaultSqlSessionFactory@5bc9ba1d] from thread [main]
+[main][2017-12-24 22:15:39.005][main][TRACE][org.springframework.transaction.support.TransactionSynchronizationManager][140]:Retrieved value [org.springframework.jdbc.datasource.ConnectionHolder@16746061] for key [{
+	CreateTime:"2017-12-24 22:15:37",
+	ActiveCount:1,
+	PoolingCount:0,
+	CreateCount:1,
+	DestroyCount:0,
+	CloseCount:0,
+	ConnectCount:1,
+	Connections:[
+	]
+}
+
+[
+]] bound to thread [main]
+[main][2017-12-24 22:15:39.006][main][TRACE][org.springframework.transaction.support.TransactionSynchronizationManager][243]:Removed value [org.springframework.jdbc.datasource.ConnectionHolder@16746061] for key [{
+	CreateTime:"2017-12-24 22:15:37",
+	ActiveCount:1,
+	PoolingCount:0,
+	CreateCount:1,
+	DestroyCount:0,
+	CloseCount:0,
+	ConnectCount:1,
+	Connections:[
+	]
+}
+
+[
+]] from thread [main]
+[main][2017-12-24 22:15:39.007][main][TRACE][org.springframework.transaction.support.AbstractPlatformTransactionManager][952]:Triggering afterCommit synchronization
+[main][2017-12-24 22:15:39.007][main][TRACE][org.springframework.transaction.support.AbstractPlatformTransactionManager][968]:Triggering afterCompletion synchronization
+[main][2017-12-24 22:15:39.011][main][TRACE][org.springframework.transaction.support.TransactionSynchronizationManager][331]:Clearing transaction synchronization
+[main][2017-12-24 22:15:39.242][main][TRACE][org.springframework.test.context.TestContextManager][287]:afterTestMethod(): instance [com.liu.test.TestUserService@45b9a632], method [public void com.liu.test.TestUserService.testQueryById1()], exception [null]
+[main][2017-12-24 22:15:39.245][main][TRACE][org.springframework.test.context.TestContextManager][206]:prepareTestInstance(): instance [com.liu.test.TestUserService@5f3b9c57]
+[main][2017-12-24 22:15:39.246][main][TRACE][org.springframework.test.context.TestContextManager][243]:beforeTestMethod(): instance [com.liu.test.TestUserService@5f3b9c57], method [public void com.liu.test.TestUserService.get()]
+[main][2017-12-24 22:15:39.247][main][TRACE][org.springframework.test.context.TestContextManager][287]:afterTestMethod(): instance [com.liu.test.TestUserService@5f3b9c57], method [public void com.liu.test.TestUserService.get()], exception [null]
+[main][2017-12-24 22:15:39.247][main][TRACE][org.springframework.test.context.TestContextManager][330]:afterTestClass(): class [com.liu.test.TestUserService]
+[main][2017-12-24 22:16:36.469][main][TRACE][org.springframework.test.context.support.ContextLoaderUtils][296]:Retrieved @ContextConfiguration attributes [{name=, value=[], classes=[], loader=interface org.springframework.test.context.ContextLoader, locations=[classpath:applicationContext.xml], inheritInitializers=true, initializers=[], inheritLocations=true}] for declaring class [com.liu.test.TestUserService].
+[main][2017-12-24 22:16:36.472][main][TRACE][org.springframework.test.context.support.ContextLoaderUtils][302]:Resolved context configuration attributes: [ContextConfigurationAttributes@1e67a849 declaringClass = 'com.liu.test.TestUserService', classes = '{}', locations = '{classpath:applicationContext.xml}', inheritLocations = true, initializers = '{}', inheritInitializers = true, name = [null], contextLoaderClass = 'org.springframework.test.context.ContextLoader']
+[main][2017-12-24 22:16:36.473][main][TRACE][org.springframework.test.context.support.AbstractTestContextBootstrapper][437]:Resolving ContextLoader for context configuration attributes [ContextConfigurationAttributes@1e67a849 declaringClass = 'com.liu.test.TestUserService', classes = '{}', locations = '{classpath:applicationContext.xml}', inheritLocations = true, initializers = '{}', inheritInitializers = true, name = [null], contextLoaderClass = 'org.springframework.test.context.ContextLoader']
+[main][2017-12-24 22:16:36.474][main][TRACE][org.springframework.test.context.support.AbstractTestContextBootstrapper][405]:Using ContextLoader class [org.springframework.test.context.support.DelegatingSmartContextLoader] for test class [com.liu.test.TestUserService]
+[main][2017-12-24 22:16:36.481][main][TRACE][org.springframework.test.context.support.AbstractTestContextBootstrapper][343]:Processing locations and classes for context configuration attributes [ContextConfigurationAttributes@1e67a849 declaringClass = 'com.liu.test.TestUserService', classes = '{}', locations = '{classpath:applicationContext.xml}', inheritLocations = true, initializers = '{}', inheritInitializers = true, name = [null], contextLoaderClass = 'org.springframework.test.context.ContextLoader']
+[main][2017-12-24 22:16:36.484][main][TRACE][org.springframework.test.context.support.ApplicationContextInitializerUtils][81]:Processing context initializers for context configuration attributes [ContextConfigurationAttributes@1e67a849 declaringClass = 'com.liu.test.TestUserService', classes = '{}', locations = '{classpath:applicationContext.xml}', inheritLocations = true, initializers = '{}', inheritInitializers = true, name = [null], contextLoaderClass = 'org.springframework.test.context.ContextLoader']
+[main][2017-12-24 22:16:36.505][main][TRACE][org.springframework.test.context.TestContextManager][131]:Registering TestExecutionListener: org.springframework.test.context.web.ServletTestExecutionListener@184cf7cf
+[main][2017-12-24 22:16:36.505][main][TRACE][org.springframework.test.context.TestContextManager][131]:Registering TestExecutionListener: org.springframework.test.context.support.DependencyInjectionTestExecutionListener@2fd6b6c7
+[main][2017-12-24 22:16:36.505][main][TRACE][org.springframework.test.context.TestContextManager][131]:Registering TestExecutionListener: org.springframework.test.context.support.DirtiesContextTestExecutionListener@5bfa9431
+[main][2017-12-24 22:16:36.505][main][TRACE][org.springframework.test.context.TestContextManager][131]:Registering TestExecutionListener: org.springframework.test.context.transaction.TransactionalTestExecutionListener@5db250b4
+[main][2017-12-24 22:16:36.505][main][TRACE][org.springframework.test.context.TestContextManager][131]:Registering TestExecutionListener: org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@223f3642
+[main][2017-12-24 22:16:36.521][main][TRACE][org.springframework.test.context.TestContextManager][173]:beforeTestClass(): class [com.liu.test.TestUserService]
+[main][2017-12-24 22:16:36.523][main][TRACE][org.springframework.test.context.TestContextManager][206]:prepareTestInstance(): instance [com.liu.test.TestUserService@45b9a632]
+[main][2017-12-24 22:16:36.896][main][TRACE][org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider][275]:Scanning file [E:\newze\workspace\ssm_project\target\classes\com\liu\sysUser\dao\UserMapper.class]
+[main][2017-12-24 22:16:36.910][main][TRACE][org.springframework.util.PropertyPlaceholderHelper][165]:Resolved placeholder 'jdbc.driver'
+[main][2017-12-24 22:16:36.911][main][TRACE][org.springframework.util.PropertyPlaceholderHelper][165]:Resolved placeholder 'jdbc.url'
+[main][2017-12-24 22:16:36.911][main][TRACE][org.springframework.util.PropertyPlaceholderHelper][165]:Resolved placeholder 'jdbc.username'
+[main][2017-12-24 22:16:36.912][main][TRACE][org.springframework.util.PropertyPlaceholderHelper][165]:Resolved placeholder 'jdbc.password'
+[main][2017-12-24 22:16:36.912][main][TRACE][org.springframework.util.PropertyPlaceholderHelper][165]:Resolved placeholder 'validationQuery'
+[main][2017-12-24 22:16:36.944][main][TRACE][org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator][359]:Did not attempt to auto-proxy infrastructure class [org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor]
+[main][2017-12-24 22:16:37.874][main][TRACE][org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator][359]:Did not attempt to auto-proxy infrastructure class [org.springframework.transaction.interceptor.TransactionInterceptor]
+[main][2017-12-24 22:16:37.915][main][TRACE][org.springframework.test.context.TestContextManager][243]:beforeTestMethod(): instance [com.liu.test.TestUserService@45b9a632], method [public void com.liu.test.TestUserService.testQueryById1()]
+[main][2017-12-24 22:16:37.929][main][TRACE][org.springframework.transaction.support.TransactionSynchronizationManager][272]:Initializing transaction synchronization
+[main][2017-12-24 22:16:37.930][main][TRACE][org.springframework.transaction.interceptor.TransactionAspectSupport][484]:Getting transaction for [com.liu.sysUser.service.Impl.UserServiceImpl.getUsers]
+[main][2017-12-24 22:16:37.949][main][TRACE][org.springframework.transaction.support.TransactionSynchronizationManager][193]:Bound value [org.mybatis.spring.SqlSessionHolder@478ee483] for key [org.apache.ibatis.session.defaults.DefaultSqlSessionFactory@abf688e] to thread [main]
+[main][2017-12-24 22:16:37.979][main][TRACE][org.springframework.transaction.support.TransactionSynchronizationManager][193]:Bound value [org.springframework.jdbc.datasource.ConnectionHolder@20a8a64e] for key [{
+	CreateTime:"2017-12-24 22:16:36",
+	ActiveCount:1,
+	PoolingCount:0,
+	CreateCount:1,
+	DestroyCount:0,
+	CloseCount:0,
+	ConnectCount:1,
+	Connections:[
+	]
+}
+
+[
+]] to thread [main]
+[main][2017-12-24 22:16:37.979][main][TRACE][org.springframework.transaction.support.TransactionSynchronizationManager][140]:Retrieved value [org.springframework.jdbc.datasource.ConnectionHolder@20a8a64e] for key [{
+	CreateTime:"2017-12-24 22:16:36",
+	ActiveCount:1,
+	PoolingCount:0,
+	CreateCount:1,
+	DestroyCount:0,
+	CloseCount:0,
+	ConnectCount:1,
+	Connections:[
+	]
+}
+
+[
+]] bound to thread [main]
+[main][2017-12-24 22:16:38.153][main][TRACE][org.apache.ibatis.logging.jdbc.BaseJdbcLogger][145]:<==    Columns: USER_ID, USER_NAME, USER_PASSWORD, USER_EMAIL
+[main][2017-12-24 22:16:38.181][main][TRACE][org.apache.ibatis.logging.jdbc.BaseJdbcLogger][145]:<==        Row: 1, 林炳文, 1234567@, ling20081005@126.com
+[main][2017-12-24 22:16:38.185][main][TRACE][org.springframework.transaction.support.TransactionSynchronizationManager][140]:Retrieved value [org.mybatis.spring.SqlSessionHolder@478ee483] for key [org.apache.ibatis.session.defaults.DefaultSqlSessionFactory@abf688e] bound to thread [main]
+[main][2017-12-24 22:16:38.185][main][TRACE][org.springframework.transaction.support.TransactionSynchronizationManager][140]:Retrieved value [org.mybatis.spring.SqlSessionHolder@478ee483] for key [org.apache.ibatis.session.defaults.DefaultSqlSessionFactory@abf688e] bound to thread [main]
+[main][2017-12-24 22:16:38.186][main][TRACE][org.springframework.transaction.interceptor.TransactionAspectSupport][513]:Completing transaction for [com.liu.sysUser.service.Impl.UserServiceImpl.getUsers]
+[main][2017-12-24 22:16:38.186][main][TRACE][org.springframework.transaction.support.AbstractPlatformTransactionManager][926]:Triggering beforeCommit synchronization
+[main][2017-12-24 22:16:38.186][main][TRACE][org.springframework.transaction.support.AbstractPlatformTransactionManager][939]:Triggering beforeCompletion synchronization
+[main][2017-12-24 22:16:38.187][main][TRACE][org.springframework.transaction.support.TransactionSynchronizationManager][243]:Removed value [org.mybatis.spring.SqlSessionHolder@478ee483] for key [org.apache.ibatis.session.defaults.DefaultSqlSessionFactory@abf688e] from thread [main]
+[main][2017-12-24 22:16:38.194][main][TRACE][org.springframework.transaction.support.TransactionSynchronizationManager][140]:Retrieved value [org.springframework.jdbc.datasource.ConnectionHolder@20a8a64e] for key [{
+	CreateTime:"2017-12-24 22:16:36",
+	ActiveCount:1,
+	PoolingCount:0,
+	CreateCount:1,
+	DestroyCount:0,
+	CloseCount:0,
+	ConnectCount:1,
+	Connections:[
+	]
+}
+
+[
+]] bound to thread [main]
+[main][2017-12-24 22:16:38.196][main][TRACE][org.springframework.transaction.support.TransactionSynchronizationManager][243]:Removed value [org.springframework.jdbc.datasource.ConnectionHolder@20a8a64e] for key [{
+	CreateTime:"2017-12-24 22:16:36",
+	ActiveCount:1,
+	PoolingCount:0,
+	CreateCount:1,
+	DestroyCount:0,
+	CloseCount:0,
+	ConnectCount:1,
+	Connections:[
+	]
+}
+
+[
+]] from thread [main]
+[main][2017-12-24 22:16:38.198][main][TRACE][org.springframework.transaction.support.AbstractPlatformTransactionManager][952]:Triggering afterCommit synchronization
+[main][2017-12-24 22:16:38.198][main][TRACE][org.springframework.transaction.support.AbstractPlatformTransactionManager][968]:Triggering afterCompletion synchronization
+[main][2017-12-24 22:16:38.198][main][TRACE][org.springframework.transaction.support.TransactionSynchronizationManager][331]:Clearing transaction synchronization
+[main][2017-12-24 22:16:38.328][main][TRACE][org.springframework.test.context.TestContextManager][287]:afterTestMethod(): instance [com.liu.test.TestUserService@45b9a632], method [public void com.liu.test.TestUserService.testQueryById1()], exception [null]
+[main][2017-12-24 22:16:38.330][main][TRACE][org.springframework.test.context.TestContextManager][206]:prepareTestInstance(): instance [com.liu.test.TestUserService@5f59185e]
+[main][2017-12-24 22:16:38.331][main][TRACE][org.springframework.test.context.TestContextManager][243]:beforeTestMethod(): instance [com.liu.test.TestUserService@5f59185e], method [public void com.liu.test.TestUserService.get()]
+[main][2017-12-24 22:16:38.332][main][TRACE][org.springframework.test.context.TestContextManager][287]:afterTestMethod(): instance [com.liu.test.TestUserService@5f59185e], method [public void com.liu.test.TestUserService.get()], exception [null]
+[main][2017-12-24 22:16:38.333][main][TRACE][org.springframework.test.context.TestContextManager][330]:afterTestClass(): class [com.liu.test.TestUserService]

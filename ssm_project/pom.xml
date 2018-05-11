@@ -1,0 +1,328 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.newze</groupId>
+  <artifactId>ssm_project</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>war</packaging>
+  
+   <name>springmvc_mybatis_demo Maven Webapp</name>  
+    <url>http://maven.apache.org</url>
+    
+    <properties>  
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>  
+        <spring.version>4.1.4.RELEASE</spring.version>  
+        <jackson.version>2.5.0</jackson.version>  
+    </properties>  
+  
+    <dependencies>  
+  
+        <dependency>  
+            <groupId>junit</groupId>  
+            <artifactId>junit</artifactId>  
+            <version>4.12</version>  
+            <scope>test</scope>  
+        </dependency>  
+  
+        <!-- spring -->  
+        <dependency>  
+            <groupId>org.springframework</groupId>  
+            <artifactId>spring-core</artifactId>  
+            <version>${spring.version}</version>  
+        </dependency>  
+  
+        <dependency>  
+            <groupId>org.springframework</groupId>  
+            <artifactId>spring-beans</artifactId>  
+            <version>${spring.version}</version>  
+        </dependency>  
+  
+        <dependency>  
+            <groupId>org.springframework</groupId>  
+            <artifactId>spring-context</artifactId>  
+            <version>${spring.version}</version>  
+        </dependency>  
+  
+        <dependency>  
+            <groupId>org.springframework</groupId>  
+            <artifactId>spring-tx</artifactId>  
+            <version>${spring.version}</version>  
+        </dependency>  
+  
+        <dependency>  
+            <groupId>org.springframework</groupId>  
+            <artifactId>spring-web</artifactId>  
+            <version>${spring.version}</version>  
+        </dependency>  
+  
+        <dependency>  
+            <groupId>org.springframework</groupId>  
+            <artifactId>spring-webmvc</artifactId>  
+            <version>${spring.version}</version>  
+        </dependency>  
+  
+        <dependency>  
+            <groupId>org.springframework</groupId>  
+            <artifactId>spring-jdbc</artifactId>  
+            <version>${spring.version}</version>  
+        </dependency>  
+  
+        <dependency>  
+            <groupId>org.springframework</groupId>  
+            <artifactId>spring-test</artifactId>  
+            <version>${spring.version}</version>  
+            <scope>test</scope>  
+        </dependency>  
+  
+        <!-- mybatis 包 -->  
+        <dependency>  
+            <groupId>org.mybatis</groupId>  
+            <artifactId>mybatis</artifactId>  
+            <version>3.2.8</version>  
+        </dependency>  
+  
+        <!--mybatis spring 插件 -->  
+        <dependency>  
+            <groupId>org.mybatis</groupId>  
+            <artifactId>mybatis-spring</artifactId>  
+            <version>1.2.2</version>  
+        </dependency>  
+  
+        <!-- mysql连接 -->  
+        <dependency>  
+            <groupId>mysql</groupId>  
+            <artifactId>mysql-connector-java</artifactId>  
+            <version>5.1.36</version>  
+        </dependency>  
+  
+        <!-- 数据源 -->  
+        <dependency>  
+            <groupId>com.alibaba</groupId>  
+            <artifactId>druid</artifactId>  
+            <version>1.0.12</version>  
+        </dependency>  
+  
+        <dependency>  
+            <groupId>org.aspectj</groupId>  
+            <artifactId>aspectjweaver</artifactId>  
+            <version>1.8.4</version>  
+        </dependency>  
+  
+        <!-- Logging use log4j2-->  
+        <dependency>  
+            <groupId>org.slf4j</groupId>  
+            <artifactId>slf4j-api</artifactId>  
+            <version>1.7.13</version>  
+        </dependency>  
+        <dependency>  
+            <groupId>org.slf4j</groupId>  
+            <artifactId>jcl-over-slf4j</artifactId>  
+            <version>1.7.13</version>  
+            <scope>runtime</scope>  
+        </dependency>  
+  
+        <!--核心log4j2jar包-->  
+        <dependency>  
+            <groupId>org.apache.logging.log4j</groupId>  
+            <artifactId>log4j-api</artifactId>  
+            <version>2.4.1</version>  
+        </dependency>  
+        <dependency>  
+            <groupId>org.apache.logging.log4j</groupId>  
+            <artifactId>log4j-core</artifactId>  
+            <version>2.4.1</version>  
+        </dependency>  
+        <!--用于与slf4j保持桥接-->  
+        <dependency>  
+            <groupId>org.apache.logging.log4j</groupId>  
+            <artifactId>log4j-slf4j-impl</artifactId>  
+            <version>2.4.1</version>  
+        </dependency>  
+        <!--web工程需要包含log4j-web，非web工程不需要-->  
+        <dependency>  
+            <groupId>org.apache.logging.log4j</groupId>  
+            <artifactId>log4j-web</artifactId>  
+            <version>2.4.1</version>  
+            <scope>runtime</scope>  
+        </dependency>  
+  
+        <!--需要使用log4j2的AsyncLogger需要包含disruptor-->  
+        <dependency>  
+            <groupId>com.lmax</groupId>  
+            <artifactId>disruptor</artifactId>  
+            <version>3.2.0</version>  
+        </dependency>  
+  
+        <!-- servlet -->  
+        <dependency>  
+            <groupId>javax.servlet</groupId>  
+            <artifactId>servlet-api</artifactId>  
+            <version>3.0-alpha-1</version>  
+            <scope>provided</scope>
+        </dependency>  
+  
+        <dependency>  
+            <groupId>javax.servlet</groupId>  
+            <artifactId>jstl</artifactId>  
+            <version>1.2</version>  
+        </dependency>  
+  		<dependency>
+			<groupId>taglibs</groupId>
+			<artifactId>standard</artifactId>
+			<version>1.1.2</version>
+		</dependency>
+		
+        <!-- json -->  
+        <dependency>  
+            <groupId>org.codehaus.jackson</groupId>  
+            <artifactId>jackson-mapper-asl</artifactId>  
+            <version>1.9.13</version>  
+        </dependency>  
+  
+        <dependency>  
+            <groupId>com.alibaba</groupId>  
+            <artifactId>fastjson</artifactId>  
+            <version>1.2.3</version>  
+        </dependency>  
+  
+        <dependency>  
+            <groupId>com.fasterxml.jackson.core</groupId>  
+            <artifactId>jackson-annotations</artifactId>  
+            <version>${jackson.version}</version>  
+        </dependency>  
+  
+        <dependency>  
+            <groupId>com.fasterxml.jackson.core</groupId>  
+            <artifactId>jackson-core</artifactId>  
+            <version>${jackson.version}</version>  
+        </dependency>  
+  
+        <dependency>  
+            <groupId>com.fasterxml.jackson.core</groupId>  
+            <artifactId>jackson-databind</artifactId>  
+            <version>${jackson.version}</version>  
+        </dependency>  
+        <!-- 文件上传 -->  
+        <dependency>  
+            <groupId>commons-io</groupId>  
+            <artifactId>commons-io</artifactId>  
+            <version>2.4</version>  
+        </dependency>  
+  
+        <dependency>  
+            <groupId>commons-fileupload</groupId>  
+            <artifactId>commons-fileupload</artifactId>  
+            <version>1.2.2</version>  
+        </dependency>  
+        
+    </dependencies>  
+    
+     <build>  
+        <finalName>ssm_project</finalName> 
+        <pluginManagement>
+            <plugins>
+                <!-- 配置Tomcat插件 -->
+                <plugin>
+                    <groupId>org.apache.tomcat.maven</groupId>
+                    <artifactId>tomcat7-maven-plugin</artifactId>
+                </plugin>
+            </plugins>
+        </pluginManagement> 
+        <plugins>  
+            <!-- Run the JUnit unit tests in an isolated classloader -->  
+            <plugin>  
+                <groupId>org.apache.maven.plugins</groupId>  
+                <artifactId>maven-surefire-plugin</artifactId>  
+                <version>2.4.2</version>  
+                <configuration>  
+                    <skipTests>true</skipTests>  
+                </configuration>  
+            </plugin>  
+  
+            <plugin>  
+                <groupId>org.apache.maven.plugins</groupId>  
+                <artifactId>maven-war-plugin</artifactId>  
+                <version>2.3</version>  
+                <configuration>  
+                    <webXml>src/main/webapp/WEB-INF/web.xml</webXml>  
+                </configuration>  
+            </plugin> 
+            <plugin>    
+    			<groupId>org.apache.maven.plugins</groupId>    
+    			<artifactId>maven-compiler-plugin</artifactId>    
+    			<configuration>
+        			<source>1.8</source>    
+       				 <target>1.8</target>    
+    			</configuration>
+			</plugin> 
+            <!-- generate java doc -->  
+            <plugin>  
+                <groupId>org.apache.maven.plugins</groupId>  
+                <artifactId>maven-javadoc-plugin</artifactId>  
+                <version>2.9.1</version>  
+                <configuration>  
+                    <javadocDirectory>target/javadoc</javadocDirectory>  
+                    <reportOutputDirectory>target/javadoc</reportOutputDirectory>  
+                    <charset>UTF-8</charset>  
+                    <encoding>UTF-8</encoding>  
+                    <docencoding>UTF-8</docencoding>  
+                    <show>private</show>  
+                </configuration>  
+            </plugin>  
+  			<!-- Maven工具生成Mybatis的代码及映射的文件。如果是在eclipse 中，选择pom.xml文件，
+  			击右键先择Run AS——>Maven Build… ——>在Goals框中输入：mybatis-generator:generate 
+			如果在命令行输入Maven命令即可，注意：一定是当前项目目录下运行该命令：mvn mybatis-generator:generate -->
+  			<plugin>
+                <groupId>org.mybatis.generator</groupId>
+                <artifactId>mybatis-generator-maven-plugin</artifactId>
+                <version>1.3.2</version>
+                <configuration>
+                    <verbose>true</verbose>
+                    <overwrite>true</overwrite>
+                </configuration>
+            </plugin>
+            <!-- 部署至本机 -->  
+            <plugin>  
+                <groupId>org.codehaus.cargo</groupId>  
+                <artifactId>cargo-maven2-plugin</artifactId>  
+                <version>1.0</version>  
+                <configuration>  
+                    <container>  
+                        <containerId>tomcat6x</containerId>  
+                        <home>D:\newze\apache-tomcat-6.0.14</home>  
+                    </container>  
+                    <configuration>  
+                        <type>existing</type>  
+                        <home>D:\newze\apache-tomcat-6.0.14</home>  
+                    </configuration>  
+                </configuration>  
+            </plugin>  
+  
+        </plugins>  
+    </build>
+     <!-- 远程仓库 -->
+    <repositories>
+	  	<repository>
+	  		<id>repository</id>
+	  		<name>repository</name>
+	  		<url>http://mvnrepository.com/</url>
+	  		<releases>  
+	          <enabled>true</enabled>  
+		    </releases>  
+		    <snapshots>  
+		      <enabled>true</enabled>  
+		    </snapshots>  
+	  	</repository>
+
+	  	<repository>
+	  		<id>maven2</id>
+	  		<name>repo1</name>
+	  		<url>http://repo1.maven.org/maven2/</url>
+	  		<releases>  
+	          <enabled>true</enabled>  
+		    </releases>  
+		    <snapshots>  
+		      <enabled>true</enabled>  
+		    </snapshots>  
+	  	</repository>
+	  </repositories>  
+</project>

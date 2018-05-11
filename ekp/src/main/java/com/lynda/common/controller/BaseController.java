@@ -16,6 +16,7 @@ import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.view.RedirectView;
 
 import com.lynda.common.plugin.Page;
+import com.lynda.util.Logger;
 import com.lynda.util.PageData;
 import com.lynda.util.StringUtils;
 import com.lynda.util.UuidUtil;
@@ -43,6 +44,7 @@ import java.util.Map.Entry;
  * 
  */
 public class BaseController {
+	private static final long serialVersionUID = 6357869213649815390L;
 	protected int pageNo =1;
 	public static  int pageSize = 10;
 	protected final static com.lynda.util.Logger logger = com.lynda.util.Logger.getLogger(BaseController.class);
@@ -172,5 +174,15 @@ public class BaseController {
 			}
 		}
 		return result;
+	}
+	public static void logBefore(Logger logger, String interfaceName) {
+		logger.info("");
+		logger.info("start");
+		logger.info(interfaceName);
+	}
+
+	public static void logAfter(Logger logger) {
+		logger.info("end");
+		logger.info("");
 	}
 }
